@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": true,
+    "lib": ["dom", "es5", "es6"],
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "paths": {
+      "*": ["node_modules/@types/*", "*"],
+      "firebase": ["node_modules/firebase/firebase.d.ts"]
+    }
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "functions"
+  ]
+}

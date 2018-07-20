@@ -1,0 +1,17 @@
+@import '../../styles/sizes.scss';
+
+.loginWidgetPaper {
+  margin: 3rem auto;
+  padding: 2rem 0 1rem 0;
+  width: 30rem;
+}
+.firebaseLogin {
+  display: flex;
+  justify-content: center;
+}
+
+@media(max-width: $sm) {
+  .loginWidgetPaper {
+    width: 20rem;
+  }
+}

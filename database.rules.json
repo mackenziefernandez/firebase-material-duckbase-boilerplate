@@ -1,0 +1,8 @@
+{
+  "rules": {
+     "$other": {
+      ".read": "auth !== null",
+      ".write": "auth !== null"
+    }
+  }
+}

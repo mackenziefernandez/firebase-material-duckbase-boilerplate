@@ -1,0 +1,112 @@
+@import '../styles/sizes.scss';
+* {
+  font-family: 'yuanti tc';
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 2;
+  }
+
+  .navigationDrawerList {
+      width: 15rem;
+
+      li svg {
+        padding-right: 1rem;
+      }
+  }
+
+  .recipeHeaderTitle, .calendarHeaderTitle {
+    font-size: 150%;
+  }
+
+  .headerTitle a {
+    color: white !important;
+  }
+
+  .appHeaderRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+            
+    .customPopover {
+      margin-right: 1rem;
+    }
+  }
+  
+  .calendarPageLayout {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+  }
+}
+
+.aboutPage {
+  max-width: 60rem;
+  margin: 1rem auto 5rem;
+
+  h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+
+    li {
+      list-style-type: disc;
+      margin: 1rem 4rem;
+    }
+  }
+
+  .about {
+    margin: 2rem;
+  }
+
+  .imageCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    img {
+      width: 15rem;
+    }
+  }
+}
+
+@media(max-width: $sm) {
+  body {
+    .appHeaderRight {
+      .userEmail {
+        display: none;
+      }
+    }
+
+    .appContentContainer {
+      font-size: 12px;
+    }
+  
+    .calendarPageLayout {
+      margin: 0 0.5rem 0.5rem;
+    }
+  }
+}
